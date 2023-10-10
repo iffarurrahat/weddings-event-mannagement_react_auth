@@ -82,7 +82,7 @@ console.log(food);
 - C: `['🍝', '🍕', '🍫', '🥑', '🍔']`
 - D: `ReferenceError`
 
-<details><summary><b>Answer: `['🍕', '🍫', '🥑', '🍔']`</b></summary>
+<details><summary><b>Answer: ['🍕', '🍫', '🥑', '🍔']</b></summary>
 <p>
 
 #### Answer: ?
@@ -107,7 +107,7 @@ console.log(sayHi());
 - C: `Hi there, null`
 - D: `ReferenceError`
 
-<details><summary><b>Answer: `Hi there, undefined`</b></summary>
+<details><summary><b>Answer: Hi there, undefined</b></summary>
 <p>
 
 #### Answer: ?
