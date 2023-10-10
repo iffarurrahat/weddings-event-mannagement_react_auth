@@ -55,12 +55,13 @@ sum(1, "2");
 - C: `"12"`
 - D: `3`
 
-<details><summary><b>Answer</b></summary>
+<details><summary><b>Answer: 12</b></summary>
 <p>
 
 #### Answer: ?
 
-<i>Write your explanation here</i>
+<i>Write your explanation here:</i>
+<span>We know that if an element has a stream, whatever epoch is done to it, it sits next to it, which is why 12 here is not epoched, but next to it.</span>
 
 </p>
 </details>
@@ -81,13 +82,13 @@ console.log(food);
 - C: `['🍝', '🍕', '🍫', '🥑', '🍔']`
 - D: `ReferenceError`
 
-<details><summary><b>Answer</b></summary>
+<details><summary><b>Answer: `['🍕', '🍫', '🥑', '🍔']`</b></summary>
 <p>
 
 #### Answer: ?
 
-<i>Write your explanation here</i>
-
+<i>Write your explanation here:</i>
+<span>The reason for this is that food is controlled, so all the values ​​contained in the food array are displayed</span>
 </p>
 </details>
 
@@ -106,12 +107,13 @@ console.log(sayHi());
 - C: `Hi there, null`
 - D: `ReferenceError`
 
-<details><summary><b>Answer</b></summary>
+<details><summary><b>Answer: `Hi there, undefined`</b></summary>
 <p>
 
 #### Answer: ?
 
-<i>Write your explanation here</i>
+<i>Write your explanation here:</i>
+<span>Name is not mentioned anywhere which is why it is undefined and Hi there was before the return which is why it is pinning</span>
 
 </p>
 </details>
@@ -134,12 +136,12 @@ console.log(count);
 - C: 3
 - D: 4
 
-<details><summary><b>Answer</b></summary>
+<details><summary><b>Answer: 3</b></summary>
 <p>
 
 #### Answer: ?
 
 <i>Write your explanation here</i>
-
+<span>Here every time count value will increase by one which is 3</span>
 </p>
 </details>
