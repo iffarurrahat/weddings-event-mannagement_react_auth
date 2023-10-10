@@ -30,13 +30,13 @@ console.log(greetign);
 - B: `ReferenceError: greetign is not defined`
 - C: `undefined`
 
-<details><summary><b>Answer</b></summary>
+<details><summary><b>Answer: {}</b></summary>
 <p>
 
 #### Answer: ?
 
-<i>Write your explanation here</i>
-
+<i>Write my explanation here:</i>
+<span>Here there was nothing declared value of then we know its value is re-declared so second here let's value of is re-declared</span>
 </p>
 </details>
 
