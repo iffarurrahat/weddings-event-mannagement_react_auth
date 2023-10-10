@@ -3,6 +3,7 @@ import Banner from "../../components/Header/Banner/Banner";
 import WeddingOptions from "../../components/WeddingOptions/WeddingOptions";
 import MatchCouple from "../../components/MatchCouple/MatchCouple";
 import ProjectCounter from "../../components/ProjectCounter/ProjectCounter";
+import MapSection from "../../components/MapSection/MapSection";
 
 const Home = () => {
 
@@ -14,6 +15,7 @@ const Home = () => {
             <WeddingOptions services={services}></WeddingOptions>
             <ProjectCounter></ProjectCounter>
             <MatchCouple></MatchCouple>
+            <MapSection></MapSection>
         </div>
     );
 };

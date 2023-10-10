@@ -32,7 +32,7 @@ const Footer = () => {
                     <div className='space-y-2 mt-2'>
                         <p className='flex gap-1 items-center'><CgMail className='text-xl text-gray-400' />felling@gmail.com</p>
                         <p className='flex gap-1 items-center'><FaPhoneAlt className='text-sm text-gray-400' />+889271622</p>
-                        <p className='flex gap-1 items-center'><MdLocationOn className='text-xl text-gray-400' />NYC New Bazar</p>
+                        <p className='flex gap-1 items-center'><MdLocationOn className='text-xl text-gray-400' />Dhaka New Bazar</p>
                     </div>
                 </div>
                 <div>

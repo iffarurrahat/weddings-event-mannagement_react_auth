@@ -25,22 +25,27 @@ const Navbar = () => {
         >
             Home
         </NavLink></li>
-        <li><NavLink
-            to="/about"
-            className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "underline" : ""
-            }
-        >
-            About Us
-        </NavLink></li>
-        <li><NavLink
-            to="/portfolio"
-            className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "underline" : ""
-            }
-        >
-            Portfolio
-        </NavLink></li>
+
+        {
+            user && <>
+                <li><NavLink
+                    to="/portfolio"
+                    className={({ isActive, isPending }) =>
+                        isPending ? "pending" : isActive ? "underline" : ""
+                    }
+                >
+                    Portfolio
+                </NavLink></li>
+                <li><NavLink
+                    to="/about"
+                    className={({ isActive, isPending }) =>
+                        isPending ? "pending" : isActive ? "underline" : ""
+                    }
+                >
+                    About Us
+                </NavLink></li>
+            </>
+        }
     </>
 
     return (
@@ -67,14 +72,18 @@ const Navbar = () => {
                 <div className="dropdown dropdown-end">
                     <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                         <div className="w-10 rounded-full">
-                            <img className="" src="https://demo.sirv.com/nuphar.jpg?w=400"/>
+                            <img className="" src="https://demo.sirv.com/nuphar.jpg?w=400" />
                         </div>
                     </label>
                     <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-40">
-                        <li className="mb-2"><a>Profile</a></li>
+
                         {
                             user ?
-                                <button onClick={handleSignOut} className="btn btn-sm bg-red-600 text-white">LogOut</button> :
+                                <div>
+
+                                    <p className="mb-2">{user?.displayName}</p>
+                                    <button onClick={handleSignOut} className="btn btn-sm bg-red-600 text-white">LogOut</button>
+                                </div> :
                                 <button className="btn btn-sm bg-green-600 text-white"><Link to='/login'>LogoIn</Link></button>
                         }
                     </ul>

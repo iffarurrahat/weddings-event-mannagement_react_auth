@@ -26,12 +26,12 @@ const router = createBrowserRouter([
                 loader: () => fetch('/weddingOptions.json'),
             },
             {
-                path: '/about',
-                element: <AboutUs></AboutUs>
-            },
-            {
                 path: '/portfolio',
                 element: <Portfolio></Portfolio>
+            },
+            {
+                path: '/about',
+                element: <AboutUs></AboutUs>
             },
             {
                 path: '/login',

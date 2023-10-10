@@ -1,4 +1,19 @@
 <div align="center">
+  <h1>My Project Details</h1>
+  <h4>My Github Link: https://github.com/programming-hero-web-course-4/b8a9-event-management-iffarurrahat</h4>
+  <h4>My Website Link: https://weddings-event-mannagement.web.app/</h4>
+  <ul>
+    <li>This project has been worked on wedding event</li>
+    <li>Anyone can come here and do any wedding event according to their choice</li>
+    <li>And we have also shown the benefits of taking which one</li>
+    <li>This project of ours is mainly published with many types of weddings</li>
+    <li>Besides that we have shown the success ratio</li>
+  </ul>
+  
+</div>
+
+
+<div align="center">
   <img height="60" src="https://edurev.gumlet.io/AllImages/original/ApplicationImages/CourseImages/944e5d47-8c55-4a89-91e5-22ab5f2798fc_CI.png">
   <h1>MCQ TEST</h1>
 </div>
