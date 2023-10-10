@@ -7,7 +7,6 @@ import ProjectCounter from "../../components/ProjectCounter/ProjectCounter";
 const Home = () => {
 
     const services = useLoaderData();
-    // console.log(services);
 
     return (
         <div>

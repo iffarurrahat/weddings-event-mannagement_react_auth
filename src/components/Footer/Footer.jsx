@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
     return (
         <footer className="bg-[#edf3f8] py-16">
-            <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+            <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 px-4 md:px-3 lg:px-1">
                 <div>
                     <img className="mb-4" src="https://i.ibb.co/Dtx9DPM/felling-logo.png" alt="" />
                     <p className="text-gray-400">Please join us in extending a warm welcome to your truest love this year. Using the release procedure</p>

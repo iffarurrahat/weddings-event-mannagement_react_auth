@@ -6,6 +6,7 @@ import SingleWeddingOption from "../pages/SingleWeddingOption/SingleWeddingOptio
 import Login from "../pages/Login/Login";
 import Register from "../pages/Register/Register";
 import PrivateRoute from "./PrivateRoute";
+import AboutUs from "../pages/AboutUs/AboutUs";
 
 const router = createBrowserRouter([
     {
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
                 path: '/weddingOption/:id',
                 element: <PrivateRoute><SingleWeddingOption></SingleWeddingOption></PrivateRoute>,
                 loader: () => fetch('/weddingOptions.json'),
+            },
+            {
+                path: '/about',
+                element: <AboutUs></AboutUs>
             },
             {
                 path: '/login',
