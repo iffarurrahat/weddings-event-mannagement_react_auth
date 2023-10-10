@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
+
 const WeddingOptionsCard = ({ service }) => {
     const { id, image, title, description, price } = service || {}
 
