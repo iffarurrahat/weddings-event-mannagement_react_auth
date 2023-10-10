@@ -34,12 +34,12 @@ const Navbar = () => {
             About Us
         </NavLink></li>
         <li><NavLink
-            to="/contact"
+            to="/portfolio"
             className={({ isActive, isPending }) =>
                 isPending ? "pending" : isActive ? "underline" : ""
             }
         >
-            Contact Us
+            Portfolio
         </NavLink></li>
     </>
 
