@@ -43,8 +43,8 @@ const Register = () => {
                 swal("Good job!", "You are successfully registered!", "success");
             })
             .catch(error => {
-                console.log('error message:', error.message);
-                console.log('error code:', error.code);
+                // console.log('error message:', error.message);
+                // console.log('error code:', error.code);
                 if (error.code === 'auth/email-already-in-use') {
                     swal("Your Already Registered", "Please Login", "info");
                 }
