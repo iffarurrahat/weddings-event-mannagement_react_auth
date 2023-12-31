@@ -10,7 +10,7 @@ Using Tool/Package:
 - Prop-Types
 - React-Icons
 - SweetAlert
-- Swiper (Slider)
+- Swiper-Slider
 - React-CountUp
 
 
