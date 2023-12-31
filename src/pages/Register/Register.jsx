@@ -2,6 +2,7 @@ import swal from 'sweetalert';
 import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../provider/AuthProvider";
+import { updateProfile } from 'firebase/auth';
 
 
 const Register = () => {
@@ -16,7 +17,7 @@ const Register = () => {
         const photo = form.get('photo');
         const email = form.get('email');
         const password = form.get('password');
-        console.log(name, photo, email, password);
+        // console.log(name, photo, email, password);
 
         // reset error
         setRegisterError('');
@@ -41,6 +42,13 @@ const Register = () => {
                 console.log(result.user);
                 e.target.reset();
                 swal("Good job!", "You are successfully registered!", "success");
+
+                //user profile update
+                updateProfile(result.user, {
+                    displayName: name,
+                    photoURL: photo
+                })
+
             })
             .catch(error => {
                 // console.log('error message:', error.message);
@@ -48,7 +56,7 @@ const Register = () => {
                 if (error.code === 'auth/email-already-in-use') {
                     swal("Your Already Registered", "Please Login", "info");
                 }
-                else if(error.code === 'auth/network-request-failed'){
+                else if (error.code === 'auth/network-request-failed') {
                     swal("Unstable Network!", "Please Solve Your Internet Problem", "info");
                 }
             })

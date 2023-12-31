@@ -1,3 +1,19 @@
+# Projects Name: Felling | Weddings-Event-Management
+# Projects Live URL: [Felling](https://weddings-event-mannagement.web.app/)
+
+Using Tool/Package:
+- React
+- React-Router-DOM
+- Tailwind CSS
+- DaisyUI
+- Firebase
+- Prop-Types
+- React-Icons
+- SweetAlert
+- Swiper (Slider)
+- React-CountUp
+
+
 <div align="center">
   <h1>My Project Details</h1>
   <h4>My Github Link: https://github.com/programming-hero-web-course-4/b8a9-event-management-iffarurrahat</h4>

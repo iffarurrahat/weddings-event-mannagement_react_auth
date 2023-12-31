@@ -26,27 +26,23 @@ const Navbar = () => {
         >
             Home
         </NavLink></li>
+        <li><NavLink
+            to="/portfolio"
+            className={({ isActive, isPending }) =>
+                isPending ? "pending" : isActive ? "underline" : ""
+            }
+        >
+            Portfolio
+        </NavLink></li>
 
-        {
-            user && <>
-                <li><NavLink
-                    to="/portfolio"
-                    className={({ isActive, isPending }) =>
-                        isPending ? "pending" : isActive ? "underline" : ""
-                    }
-                >
-                    Portfolio
-                </NavLink></li>
-                <li><NavLink
-                    to="/about"
-                    className={({ isActive, isPending }) =>
-                        isPending ? "pending" : isActive ? "underline" : ""
-                    }
-                >
-                    About Us
-                </NavLink></li>
-            </>
-        }
+        <li><NavLink
+            to="/about"
+            className={({ isActive, isPending }) =>
+                isPending ? "pending" : isActive ? "underline" : ""
+            }
+        >
+            About Us
+        </NavLink></li>
     </>
 
     return (
@@ -76,22 +72,29 @@ const Navbar = () => {
                             {
                                 user ?
                                     <img className="" src={user.photoURL} /> :
-                                    <img className="" src="https://demo.sirv.com/nuphar.jpg?w=400" />
+                                    <img className="" src="https://i.ibb.co/r7pnyjz/user.png" />
                             }
                         </div>
                     </label>
-                    <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-40">
-
+                    {/* drop down menu */}
+                    <div>
                         {
-                            user ?
-                                <div>
-
-                                    <p className="mb-2">{user?.displayName}</p>
-                                    <button onClick={handleSignOut} className="btn btn-sm bg-red-600 text-white">LogOut</button>
-                                </div> :
-                                <button className="btn btn-sm bg-green-600 text-white"><Link to='/login'>LogoIn</Link></button>
+                            user &&
+                            <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-44">
+                                {
+                                    user ?
+                                        <div className="space-y-2 mb-3 ">
+                                            <p>User:{user ? user?.displayName : ''}</p>
+                                            <p>Email:{user ? user?.email : ''}</p>
+                                            <button onClick={handleSignOut} className="btn btn-sm bg-red-600 text-white">LogOut</button>
+                                        </div>
+                                        :
+                                        // <button className="btn btn-sm bg-green-600 text-white"><Link to='/login'>LogoIn</Link></button>
+                                        ""
+                                }
+                            </ul>
                         }
-                    </ul>
+                    </div>
                 </div>
             </div>
         </div>
